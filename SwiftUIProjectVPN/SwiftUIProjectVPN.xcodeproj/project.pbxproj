@@ -11,6 +11,7 @@
 		01C787852BE6A1320071172E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C787842BE6A1320071172E /* ContentView.swift */; };
 		01C787872BE6A1340071172E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01C787862BE6A1340071172E /* Assets.xcassets */; };
 		01C7878A2BE6A1340071172E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01C787892BE6A1340071172E /* Preview Assets.xcassets */; };
+		01C787982BE6A26B0071172E /* VPNViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C787972BE6A26B0071172E /* VPNViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		01C787842BE6A1320071172E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		01C787862BE6A1340071172E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01C787892BE6A1340071172E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		01C787972BE6A26B0071172E /* VPNViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +53,9 @@
 		01C787812BE6A1320071172E /* SwiftUIProjectVPN */ = {
 			isa = PBXGroup;
 			children = (
-				01C787822BE6A1320071172E /* SwiftUIProjectVPNApp.swift */,
-				01C787842BE6A1320071172E /* ContentView.swift */,
-				01C787862BE6A1340071172E /* Assets.xcassets */,
+				01C787902BE6A1D40071172E /* Application */,
+				01C787922BE6A1F20071172E /* Modules */,
+				01C787912BE6A1DD0071172E /* SupportingFiles */,
 				01C787882BE6A1340071172E /* Preview Content */,
 			);
 			path = SwiftUIProjectVPN;
@@ -65,6 +67,63 @@
 				01C787892BE6A1340071172E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		01C787902BE6A1D40071172E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				01C787822BE6A1320071172E /* SwiftUIProjectVPNApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		01C787912BE6A1DD0071172E /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				01C787862BE6A1340071172E /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		01C787922BE6A1F20071172E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				01C787932BE6A1FF0071172E /* VPNModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		01C787932BE6A1FF0071172E /* VPNModule */ = {
+			isa = PBXGroup;
+			children = (
+				01C787962BE6A2430071172E /* Model */,
+				01C787952BE6A2390071172E /* View */,
+				01C787942BE6A2220071172E /* ViewModel */,
+			);
+			path = VPNModule;
+			sourceTree = "<group>";
+		};
+		01C787942BE6A2220071172E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				01C787972BE6A26B0071172E /* VPNViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		01C787952BE6A2390071172E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				01C787842BE6A1320071172E /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		01C787962BE6A2430071172E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01C787852BE6A1320071172E /* ContentView.swift in Sources */,
+				01C787982BE6A26B0071172E /* VPNViewModel.swift in Sources */,
 				01C787832BE6A1320071172E /* SwiftUIProjectVPNApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
