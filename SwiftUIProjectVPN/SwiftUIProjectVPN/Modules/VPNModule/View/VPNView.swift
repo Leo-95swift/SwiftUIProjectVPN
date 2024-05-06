@@ -7,43 +7,39 @@
 
 import SwiftUI
 
-/// Предстовление экрана VPN
+/// Экран с VPN функционалом
 struct VPNView: View {
     
     // MARK: = Constants
     
     enum Constants {
-        
-        // Image names
         static let flagImage = "flag"
-        
-        // Label Titles
         static let ipAdress = "Ip Adress"
         static let received = "Received"
         static let sent = "Sent"
-        
-        // Label descriptions
         static let ipAdressDescription = "127.0.0.1"
         static let receivedDescription = "0 MB"
         static let sentDescription = "0 MB"
     }
-    
+        
     // MARK: - @State Private Properties
-    
+
     @State private var isToggleOn = false
     
     // MARK: - Body
-
+    
     var body: some View {
         ZStack {
             Color(.black)
-                .ignoresSafeArea(edges: .top)
+                .ignoresSafeArea()
             VStack(spacing: 45) {
                 Spacer()
                 Image(Constants.flagImage)
                 Toggle(isOn: $isToggleOn) {
                     Text("")
-                }.frame(width: 54)
+                }
+                    .frame(width: 54)
+                
                 HStack(spacing: 30) {
                     labelTitlesView
                     labelDescriptionsView
@@ -58,8 +54,8 @@ struct VPNView: View {
         }
     }
     
-    // MARK: - UI Elements
-    
+    // MARK: - Visual Elements
+        
     var labelTitlesView: some View {
         VStack(spacing: 14) {
             Text(Constants.ipAdress)
@@ -97,7 +93,6 @@ struct VPNView: View {
                 .font(.system(size: 18))
         }
     }
-    
 }
 
 #Preview {
