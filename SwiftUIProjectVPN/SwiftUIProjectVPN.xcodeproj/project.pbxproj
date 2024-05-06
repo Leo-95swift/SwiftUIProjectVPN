@@ -116,16 +116,9 @@
 			children = (
 				01C787962BE6A2430071172E /* Model */,
 				01C787952BE6A2390071172E /* View */,
-				01C787942BE6A2220071172E /* ViewModel */,
+				01C787E92BE8C5640071172E /* ViewModel */,
 			);
 			path = VPNModule;
-			sourceTree = "<group>";
-		};
-		01C787942BE6A2220071172E /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		01C787952BE6A2390071172E /* View */ = {
@@ -217,6 +210,13 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		01C787E92BE8C5640071172E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
